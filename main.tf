@@ -1,6 +1,7 @@
 provider "azurerm" {
   features {}
   subscription_id = "b9bbda86-494f-4197-9327-d3a95336f6c5"
+  
 }
 
 resource "azurerm_resource_group" "rg" {
@@ -28,6 +29,8 @@ module "acr" {
   source = "./modules/acr"
 
   acr_name            = var.acr_name
+  resource_group_location = var.resource_group_location
+  resource_group_name = var.resource_group_name 
   acr_location        = var.acr_location
   acr_sku             = "premiun"
   acr_tags            = var.acr_tags
@@ -56,6 +59,7 @@ module "keyvault" {
   source = "./modules/keyvault"
 
   key_vault_name = var.key_vault_name
+  resource_group_name = var.resource_group_name
   key_vault_location = var.key_vault_location
   tenant_id = var.tenant_id
   admin_object_id = var.admin_object_id

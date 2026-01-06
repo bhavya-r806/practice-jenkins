@@ -10,11 +10,20 @@ variable "acr_sku" {
 }
 
 variable "acr_tags" {
-    type = string
+    type = map(string)
   
 }
 
 variable "acr_location" {
+    type = string
+  
+}
+variable "resource_group_name" {
+    type = string
+  
+}
+
+variable "resource_group_location" {
     type = string
   
 }

@@ -77,6 +77,17 @@ variable "acr_tags" {
   description = "Key-value tags applied to the Azure Container Registry."
 }
 
+variable "resource_group_location" {
+  type = string
+  
+}
+
+variable "resource_group_name" {
+  type = string
+  
+}
+
+
 #####################################
 # Azure Kubernetes Service (AKS) Variables
 #####################################

@@ -14,3 +14,8 @@ variable "tenant_id" {
 variable "admin_object_id" {
   type = string
 }
+
+variable "resource_group_name" {
+  type = string
+  
+}
