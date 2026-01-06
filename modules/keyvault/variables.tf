@@ -7,7 +7,7 @@ variable "key_vault_location" {
 }
 
 variable "tenant_id" {
-    type = number
+    type = string
   
 }
 

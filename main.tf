@@ -64,6 +64,6 @@ module "keyvault" {
   tenant_id = var.tenant_id
   admin_object_id = var.admin_object_id
 }
-  
+ 
 
 
