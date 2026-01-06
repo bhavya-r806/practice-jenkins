@@ -10,7 +10,7 @@ variable "acr_sku" {
 }
 
 variable "acr_tags" {
-    type = set
+    type = string
   
 }
 
