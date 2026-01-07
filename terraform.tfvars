@@ -1,39 +1,38 @@
 # Resource Group
 
-main_rgname   = "rg-dev"
-main_location = "centralindia"
+main_rgname   = "practice-resource"
+main_location = "EastUs"
 
 # Virtual Network (VNet)
-main_vnet_name          = "vnet-dev"
+main_vnet_name          = "practice-vnet"
 vnet_address_space      = ["10.0.0.0/16"]
 
 # Subnet
 
-vnet_subnet                 = "subnet-dev"
+vnet_subnet                 = "practice-subnet"
 vnet_subnet_address_prefixes = ["10.0.1.0/24"]
 
 # Network Security Group
 
-sg_name = "nsg-dev"
+sg_name = "practice-nsg"
 
 # Virtual Network Tagging
 
-vnet_tags = "dev"
+vnet_tags = "UAT"
 
 
 # Azure Container Registry (ACR)
-acr_name     = "acrdev12345"           # must be globally unique
-acr_location = "centralindia"
+acr_name     = "practice12345"           # must be globally unique
+acr_location = "EastUS"
 acr_tags     = {
-  environment = "dev"
+  environment = "UAT"
   project     = "infra"
 }
 
-# Azure Kubernetes Service (AKS)
+# key_vault
 
-cluster_name        = "aks-dev"
-cluster_dns_prefix  = "aksdev"
-node_pool_name      = "system"
-node_pool_count     = 2
-cluster_vm_size     = "Standard_D2_v2"
-cluster_tags        = "dev"
+key_vault_name = "practice-vault"
+
+
+tenant_id  = "ddce66d7-fc9b-4ffd-94ad-7db0f808249c"
+admin_object_id = "6a977688-867b-4d11-9825-980d3f4223a6"
