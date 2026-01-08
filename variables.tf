@@ -88,40 +88,6 @@ variable "resource_group_name" {
 }
 
 
-#####################################
-# Azure Kubernetes Service (AKS) Variables
-#####################################
-
-variable "cluster_name" {
-  type        = string
-  description = "Name of the Azure Kubernetes Service (AKS) cluster."
-}
-
-variable "cluster_dns_prefix" {
-  type        = string
-  description = "DNS prefix used by the AKS cluster for internal communication."
-}
-
-variable "node_pool_name" {
-  type        = string
-  description = "Name of the default node pool in the AKS cluster."
-}
-
-variable "node_pool_count" {
-  type        = number
-  description = "Number of nodes in the AKS default node pool."
-}
-
-variable "cluster_vm_size" {
-  type        = string
-  description = "VM size for AKS worker nodes (e.g., Standard_D2_v2)."
-}
-
-variable "cluster_tags" {
-  type        = string
-  description = "Environment tag applied to the AKS cluster (e.g., dev, test, prod)."
-}
-
 #keyvault
 variable "key_vault_name" {
   type = string
