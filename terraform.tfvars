@@ -32,6 +32,7 @@ acr_tags     = {
 # key_vault
 
 key_vault_name = "practice-vault"
+key_vault_location = "EastUS"
 
 
 tenant_id  = "ddce66d7-fc9b-4ffd-94ad-7db0f808249c"
