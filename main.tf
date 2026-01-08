@@ -36,23 +36,6 @@ module "acr" {
   acr_tags            = var.acr_tags
 }
 
-
-#AKS
-module "aks" {
-  source = "./modules/aks"
-
-  cluster_name        = var.cluster_name
-  cluster_dns_prefix  = var.cluster_dns_prefix
-
-  resource_group_name = azurerm_resource_group.rg.name
-  rg_location         = azurerm_resource_group.rg.location
-
-  node_pool_name      = var.node_pool_name
-  node_pool_count     = var.node_pool_count
-  cluster_vm_size     = var.cluster_vm_size
-  cluster_tags        = var.cluster_tags
-}
-
 #Azure KeyVault
 
 module "keyvault" {

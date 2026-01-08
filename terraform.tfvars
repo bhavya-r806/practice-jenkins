@@ -1,6 +1,6 @@
 # Resource Group
 
-main_rgname   = "practice-resource"
+resource_group_name   = "practice-resource"
 main_location = "EastUs"
 
 # Virtual Network (VNet)
