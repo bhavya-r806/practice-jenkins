@@ -1,7 +1,8 @@
 # Resource Group
 
-resource_group_name   = "practice-resource"
-main_location = "EastUs"
+main_rgname              = "rg-jenkins-demo"
+resource_group_location = "eastus"
+
 
 # Virtual Network (VNet)
 main_vnet_name          = "practice-vnet"
