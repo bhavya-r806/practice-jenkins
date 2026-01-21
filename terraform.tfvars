@@ -1,7 +1,7 @@
 # Resource Group
 
-main_rgname              = "rg-jenkins-demo"
-resource_group_location = "eastus"
+main_location        = "eastus"
+resource_group_name = "rg-jenkins-demo"
 
 
 # Virtual Network (VNet)
