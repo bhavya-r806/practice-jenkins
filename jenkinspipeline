@@ -12,7 +12,6 @@ pipeline {
 
     options {
         timestamps()
-        
     }
 
     stages {
@@ -38,31 +37,25 @@ pipeline {
 
         stage('Terraform Init') {
             steps {
-                dir('terraform_code') {
-                    sh '''
-                    terraform init -reconfigure
-                    '''
-                }
+                sh '''
+                terraform init -reconfigure
+                '''
             }
         }
 
         stage('Terraform Validate') {
             steps {
-                dir('terraform_code') {
-                    sh '''
-                    terraform validate
-                    '''
-                }
+                sh '''
+                terraform validate
+                '''
             }
         }
 
         stage('Terraform Plan') {
             steps {
-                dir('terraform_code') {
-                    sh '''
-                    terraform plan -var-file="terraform.tfvars" -out=tfplan
-                    '''
-                }
+                sh '''
+                terraform plan -var-file="terraform.tfvars" -out=tfplan
+                '''
             }
         }
 
@@ -74,11 +67,9 @@ pipeline {
 
         stage('Terraform Apply') {
             steps {
-                dir('terraform_code') {
-                    sh '''
-                    terraform apply -auto-approve tfplan
-                    '''
-                }
+                sh '''
+                terraform apply -auto-approve tfplan
+                '''
             }
         }
     }
