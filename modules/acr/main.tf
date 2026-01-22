@@ -6,7 +6,7 @@ resource "azurerm_container_registry" "acr" {
   admin_enabled       = false
 
   georeplications {
-    location                = "West US"
+    location                = "centralindia"
     zone_redundancy_enabled = true
     tags                    = var.acr_tags
   }
