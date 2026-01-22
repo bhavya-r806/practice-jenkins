@@ -42,7 +42,7 @@ module "keyvault" {
   source = "./modules/keyvault"
 
   key_vault_name = var.key_vault_name
-  resource_group_name = var.ain_rgname
+  resource_group_name = var.main_rgname
   key_vault_location = var.key_vault_location
   tenant_id = var.tenant_id
   admin_object_id = var.admin_object_id
