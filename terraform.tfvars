@@ -23,7 +23,7 @@ vnet_tags = "UAT"
 
 
 # Azure Container Registry (ACR)
-acr_name     = "practice12345"           # must be globally unique
+acr_name     = "infra-dev-acr-001"           # must be globally unique
 acr_location = "eastus"
 acr_tags     = {
   environment = "UAT"
@@ -32,7 +32,7 @@ acr_tags     = {
 
 # key_vault
 
-key_vault_name = "practice-vault"
+key_vault_name = "infra-dev-kv-001"
 key_vault_location = "eastus"
 
 
