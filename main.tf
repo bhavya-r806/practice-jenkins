@@ -6,7 +6,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
   name     = var.main_rgname
-  location = var.main_location
+  location = var.resource_group_location
 }
 
 module "vnet" {
@@ -30,7 +30,7 @@ module "acr" {
 
   acr_name            = var.acr_name
   resource_group_location = var.resource_group_location
-  resource_group_name = var.resource_group_name 
+  resource_group_name = var.main_rgname 
   acr_location        = var.acr_location
   acr_sku             = "premiun"
   acr_tags            = var.acr_tags
@@ -42,7 +42,7 @@ module "keyvault" {
   source = "./modules/keyvault"
 
   key_vault_name = var.key_vault_name
-  resource_group_name = var.resource_group_name
+  resource_group_name = var.ain_rgname
   key_vault_location = var.key_vault_location
   tenant_id = var.tenant_id
   admin_object_id = var.admin_object_id
