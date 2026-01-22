@@ -23,7 +23,7 @@ vnet_tags = "UAT"
 
 
 # Azure Container Registry (ACR)
-acr_name     = "infradevacr001"           # must be globally unique
+acr_name     = "bhavyacrdev01"           # must be globally unique
 acr_location = "eastus"
 acr_tags     = {
   environment = "UAT"
