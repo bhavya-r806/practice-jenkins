@@ -7,7 +7,7 @@ variable "main_rgname" {
   description = "Name of the Azure Resource Group where all resources will be deployed."
 }
 
-variable "main_location" {
+variable "resource_group_location" {
   type        = string
   description = "Azure region for deploying all resources (e.g., centralindia, eastus)."
 }
@@ -75,16 +75,6 @@ variable "acr_location" {
 variable "acr_tags" {
   type        = map(string)
   description = "Key-value tags applied to the Azure Container Registry."
-}
-
-variable "resource_group_location" {
-  type = string
-  
-}
-
-variable "resource_group_name" {
-  type = string
-  
 }
 
 

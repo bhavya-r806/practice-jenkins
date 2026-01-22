@@ -1,7 +1,7 @@
 # Resource Group
 
 main_rgname       = "rg-jenkins-demo"
-resource_group_location = "EastUs"
+resource_group_location = "eastus"
 
 
 # Virtual Network (VNet)
@@ -24,7 +24,7 @@ vnet_tags = "UAT"
 
 # Azure Container Registry (ACR)
 acr_name     = "practice12345"           # must be globally unique
-acr_location = "EastUS"
+acr_location = "eastus"
 acr_tags     = {
   environment = "UAT"
   project     = "infra"
@@ -33,7 +33,7 @@ acr_tags     = {
 # key_vault
 
 key_vault_name = "practice-vault"
-key_vault_location = "EastUS"
+key_vault_location = "eastus"
 
 
 tenant_id  = "ddce66d7-fc9b-4ffd-94ad-7db0f808249c"
